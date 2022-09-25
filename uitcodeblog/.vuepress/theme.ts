@@ -3,7 +3,7 @@ import * as navbar from "./navbar/index.js";
 import * as sidebar from "./sidebar/index.js";
 
 export default hopeTheme({
-  hostname: "https://vuepress-theme-hope-v2-demo.mrhope.site",
+  hostname: "https://uitcode.com",
   author: {
     name: "Thien.HX",
     url: "https://www.youtube.com/c/HoangThienUITCODE",
