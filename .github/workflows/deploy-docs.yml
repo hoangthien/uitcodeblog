@@ -20,7 +20,6 @@ jobs:
 
       - name: Build site 🏗
         run: |
-          cd ./uitcodeblog
           npm run build
 
       # https://github.com/marketplace/actions/github-pages-action
