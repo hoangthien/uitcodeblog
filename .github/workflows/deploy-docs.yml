@@ -8,24 +8,33 @@ jobs:
   deploy-gh-pages:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout 🛎️
-        uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v3
         with:
-          persist-credentials: false
+          fetch-depth: 0
+          # if your docs needs submodules, uncomment the following line
+          # submodules: true
 
-      - name: NPM install 📦
+
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
         with:
-          working-directory: uitcodeblog
-        uses: bahmutov/npm-install@v1
+          node-version: 16
+          cache: npm
 
-      - name: Build site 🏗
-        run: |
-          npm run build
+      - name: Install Deps
+        run: npm install
 
-      # https://github.com/marketplace/actions/github-pages-action
-      - name: Deploy 🚀
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Build Docs
+        env:
+          NODE_OPTIONS: --max_old_space_size=8192
+        run: |-
+          npm run docs:build
+
+      - name: Deploy Docs
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: docs
+          # This is the branch where the docs are deployed to
+          branch: gh-pages
           cname: uitcode.com
