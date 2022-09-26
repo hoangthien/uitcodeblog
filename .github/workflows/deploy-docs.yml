@@ -15,7 +15,7 @@ jobs:
 
       - name: NPM install 📦
         with:
-          working-directory: dev
+          working-directory: uitcodeblog
         uses: bahmutov/npm-install@v1
 
       - name: Build site 🏗
