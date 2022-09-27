@@ -5,12 +5,12 @@ import * as sidebar from "./sidebar/index.js";
 export default hopeTheme({
   hostname: "https://uitcode.com",
   author: {
-    name: "Thien.HX",
+    name: "Mr. Hoang Xuan Thien",
     url: "https://www.youtube.com/c/HoangThienUITCODE",
   },
   iconAssets: "iconfont",
   logo: "/logo.png",
-  repo: "vuepress-theme-hope/vuepress-theme-hope",
+  repo: "https://github.com/hoangthien/uitcodeblog",
   docsDir: "demo/src",
   pageInfo: ["Author", "Original", "Date", "Category", "Tag", "ReadingTime"],
   blog: {

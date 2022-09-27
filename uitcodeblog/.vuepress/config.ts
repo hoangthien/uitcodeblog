@@ -8,12 +8,12 @@ export default defineUserConfig({
     "/": {
       lang: "vi-VN",
       title: "UITCODE",
-      description: "vuepress-theme-hope",
+      description: "Share to be shared",
     },
     "/en/": {
       lang: "en-US",
       title: "UITCODE",
-      description: "vuepress-theme-hope",
+      description: "Share to be shared",
     },
   },
 
