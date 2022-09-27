@@ -2,11 +2,8 @@
 home: true
 layout: Blog
 icon: home
-title: Blog Home
-heroImage: /logo.svg
-heroText: the name of your blog
-tagline: You can put your slogan here
-heroFullScreen: true
+title: Home
+heroText: Share to be shared
 projects:
   - icon: project
     name: project name

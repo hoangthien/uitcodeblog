@@ -10,8 +10,8 @@ export const vi = navbar([
       {
         text: "Drupal Development",
         children: [
-          { text: "Theme", icon: "edit", link: "theme" },
-          { text: "Module", icon: "edit", link: "module" },
+          { text: "Drupal 8", icon: "edit", link: "drupal-8" },
+          { text: "Drupal 9", icon: "edit", link: "drupal-9" },
         ],
       },
       {
@@ -22,6 +22,6 @@ export const vi = navbar([
       },
     ],
   },
-  { text: "Giới thiệu", icon: "creative", link: "/gioi-thieu" },
-  { text: "Liên hệ", icon: "creative", link: "/lien-he" },
+  { text: "Giới thiệu", icon: "creative", link: "/gioi-thieu.html" },
+  { text: "Liên hệ", icon: "creative", link: "/lien-he.html" },
 ]);
