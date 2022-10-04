@@ -10,8 +10,9 @@ export const en = navbar([
       {
         text: "Drupal Development",
         children: [
-          { text: "Drupal 8", icon: "edit", link: "drupal-8" },
-          { text: "Drupal 9", icon: "edit", link: "drupal-9" },
+          { text: "Site Builder", icon: "article", link: "site-builder" },
+          { text: "Theme Development", icon: "decorate", link: "theme-development" },
+          { text: "Module Development", icon: "software", link: "module-development"},
         ],
       },
       {

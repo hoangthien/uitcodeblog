@@ -1,6 +1,7 @@
 ---
 icon: edit
 date: 2022-09-26
+lastUpdated: false
 category:
   - Domain
   - Hosting
