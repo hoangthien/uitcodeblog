@@ -1,7 +1,7 @@
 ---
 icon: edit
 date: 2022-09-25
-lastUpdated: false
+contributors: false
 category:
   - Drupal
   - Drupal 8
