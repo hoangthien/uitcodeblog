@@ -11,7 +11,7 @@ export default hopeTheme({
   iconAssets: "iconfont",
   logo: "/logo.png",
   repo: "https://github.com/hoangthien/uitcodeblog",
-  docsDir: "demo/src",
+  docsDir: "uitcodeblog/src",
   pageInfo: ["Author", "Original", "Date", "Category", "Tag", "ReadingTime"],
   blog: {
     medias: {
