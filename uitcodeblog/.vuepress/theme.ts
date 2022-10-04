@@ -23,20 +23,20 @@ export default hopeTheme({
     "/": {
       navbar: navbar.vi,
       sidebar: sidebar.vi,
-      footer: "UITCODE",
+      footer: "UITCODE - Share to be shared",
       displayFooter: true,
       blog: {
-        description: "A Drupal Developer",
+        description: "Drupal Developer",
         intro: "/cv.html",
       },
     },
     "/en/": {
       navbar: navbar.en,
       sidebar: sidebar.en,
-      footer: "UITCODE",
+      footer: "UITCODE - Share to be shared",
       displayFooter: true,
       blog: {
-        description: "A Drupal Developer",
+        description: "Drupal Developer",
         intro: "/cv.html",
       },
     },
