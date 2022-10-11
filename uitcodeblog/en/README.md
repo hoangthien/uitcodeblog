@@ -11,8 +11,8 @@ projects:
 
   - icon: decorate
     name: Theme Development
-    link: https://uitcode.com/en.category/theme-development/
+    link: /en/category/theme-development/
 
   - icon: software
     name: Module Development
-    link: https://uitcode.com/en/category/module-development/
+    link: /en/category/module-development/
