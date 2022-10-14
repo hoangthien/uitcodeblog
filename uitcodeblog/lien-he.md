@@ -2,85 +2,36 @@
 home: true
 icon: home
 title: Liên hệ
-# heroImage: /logo.svg
-heroText: Liên hệ
-tagline: A vuepress theme with tons of features✨
-actions:
-  - text: Get Started 💡
-    link: /guide/
-    type: primary
-
-  - text: Config 🛠
-    link: /config/
-
-  - text: Online Demo 🪀
-    link: https://stackblitz.com/fork/vuepress-theme-hope
+heroImage: /logo.svg
+heroText: Hoàng Thiên - Drupal Developer
+tagline: Hãy liên hệ với tôi qua email, đây là hình thức liên lạc tôi hay dùng nhất✨
 
 features:
-  - title: Slide page
-    icon: slides
-    details: Adding slide pages to display things you like
-    link: /guide/layout/slides
-
-  - title: Layout enhancement
-    icon: layout
-    details: Adding breadcrumb, footer, improved navbar, improved page nav and etc.
-    link: /guide/layout/
-
-  - title: Pageviews and comments
+  - title: hoangthien.uit@gmail.com
     icon: comment
-    details: Start pageview statistics and comment support with Waline
-    link: /guide/feature/comment.html
+    details: Bạn có thể liên hệ trao đổi yêu cầu với tôi qua mail
+
+  - title: +84 359 671 572
+    icon: mobile
+    details: Hoặc có thể liên hệ trực tiếp nếu có yêu cầu đối ứng gấp
+
+  - title: Tp Hồ Chí Minh
+    icon: sitemap
+    details: Địa chỉ nơi tôi ở nếu bạn muốn mời tôi coffee
 
 ---
 
-## 🛠Install
+## 🛠 Thông tin cá nhân
 
-Create a vuepress-theme-hope project in `[dir]` directory under the current project:
-
-::: code-tabs#shell
-
-@tab pnpm
-
-```bash
-pnpm create vuepress-theme-hope@next [dir]
-```
-
-@tab npm
-
-```bash
-npm init vuepress-theme-hope@next [dir]
-```
-
+::: info Họ tên: Hoàng Xuân Thiên
 :::
 
-## 🚀Usage
+::: tip Kĩ sư Kỹ thuật phần mềm - Đại học Công nghệ thông tin - VNU
+:::
 
-::: code-tabs#language
+::: tip Senior Drupal Developer
+:::
 
-@tab TS
-
-```ts
-// .vuepress/config.ts
-import { defineUserConfig } from "vuepress";
-import { hopeTheme } from "vuepress-theme-hope";
-
-export default defineUserConfig({
-  theme: hopeTheme({
-    // your theme config here
-  }),
-});
-```
-
-@tab JS
-
-```js
-// .vuepress/config.js
-import { hopeTheme } from "vuepress-theme-hope";
-
-export default {
-  theme: hopeTheme({
-    // your theme config here
-  }),
-};
-```
+::: danger Hãy liên hệ tôi nếu bạn muốn xây dựng website cho doanh nghiệp của mình
+Tôi có kinh nghiệm xây dựng và phát triển hệ thống website cho các doanh nghiệp. Nếu bạn cần xây dựng website với đầy đủ công năng, bảo mật, dễ bảo trì thì hãy liên hệ với tôi. Tôi có thể giúp bạn làm điều đó.
+:::

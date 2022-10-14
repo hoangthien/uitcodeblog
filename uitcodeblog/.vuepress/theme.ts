@@ -5,7 +5,7 @@ import * as sidebar from "./sidebar/index.js";
 export default hopeTheme({
   hostname: "https://uitcode.com",
   author: {
-    name: "Mr. Hoang Xuan Thien",
+    name: "Mr. Hoang Thien",
     url: "https://www.youtube.com/c/HoangThienUITCODE",
   },
   iconAssets: "iconfont",
