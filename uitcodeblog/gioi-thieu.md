@@ -2,85 +2,21 @@
 home: true
 icon: home
 title: Giới thiệu
-# heroImage: /logo.svg
-heroText: Giới thiệu
-tagline: A vuepress theme with tons of features✨
+heroImage: /logo.png
+heroText: Hoàng Thiên xin chào!
+tagline: Đây là trang blog cá nhân của tôi, chuyên chia sẻ về công nghệ, lập trình, đặc biệt là mảng lập trình với Drupal CMS, Web development và nhiều thứ hay ho khác…✨
 actions:
-  - text: Get Started 💡
-    link: /guide/
+  - text: Tìm hiểu về Drupal CMS 💡
+    link: /category/drupal/
     type: primary
 
-  - text: Config 🛠
-    link: /config/
+  - text: Công nghệ thông tin 🛠
+    link: /category/cong-nghe/
 
-  - text: Online Demo 🪀
-    link: https://stackblitz.com/fork/vuepress-theme-hope
-
-features:
-  - title: Slide page
-    icon: slides
-    details: Adding slide pages to display things you like
-    link: /guide/layout/slides
-
-  - title: Layout enhancement
-    icon: layout
-    details: Adding breadcrumb, footer, improved navbar, improved page nav and etc.
-    link: /guide/layout/
-
-  - title: Pageviews and comments
-    icon: comment
-    details: Start pageview statistics and comment support with Waline
-    link: /guide/feature/comment.html
+  - text: Lập trình web 🪀
+    link: /category/lap-trinh/
 
 ---
 
-## 🛠Install
+## 🛠 Vài lời... từ từ viết sau nhé...
 
-Create a vuepress-theme-hope project in `[dir]` directory under the current project:
-
-::: code-tabs#shell
-
-@tab pnpm
-
-```bash
-pnpm create vuepress-theme-hope@next [dir]
-```
-
-@tab npm
-
-```bash
-npm init vuepress-theme-hope@next [dir]
-```
-
-:::
-
-## 🚀Usage
-
-::: code-tabs#language
-
-@tab TS
-
-```ts
-// .vuepress/config.ts
-import { defineUserConfig } from "vuepress";
-import { hopeTheme } from "vuepress-theme-hope";
-
-export default defineUserConfig({
-  theme: hopeTheme({
-    // your theme config here
-  }),
-});
-```
-
-@tab JS
-
-```js
-// .vuepress/config.js
-import { hopeTheme } from "vuepress-theme-hope";
-
-export default {
-  theme: hopeTheme({
-    // your theme config here
-  }),
-};
-```
