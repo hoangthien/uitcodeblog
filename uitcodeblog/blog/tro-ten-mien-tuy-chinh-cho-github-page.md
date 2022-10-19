@@ -9,7 +9,7 @@ category:
 
 # Trỏ tên miền tùy chỉnh cho github page
 
-## Xác minh domain mới mưa để sử dụng cho github page
+## Xác minh domain mới mua để sử dụng cho github page
 Đăng nhập và vào trang https://github.com/settings/pages
 
 Thêm domain bạn mới mua và bấm thêm, lúc này github sẽ cho bạn DNS TXT record:
@@ -46,4 +46,4 @@ Mục Custom domain bạn nhập domain mới mua và Save lại, chờ check DN
 ## Build and deployment
 Truy cập https://github.com/{acount_github}/{repo_name}/settings/pages
 
-Tại đây bạn chọn nhánh chứa html, cụ thể là branh main và thư mục /docs. Bấm save. Bây giờ có thể truy cập site với html đã trỏ domain vừa mua thành công.
+Tại đây bạn chọn branch chứa html, cụ thể là branch main và thư mục /docs. Bấm save. Bây giờ có thể truy cập site với html đã trỏ domain vừa mua thành công.
