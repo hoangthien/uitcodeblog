@@ -24,7 +24,10 @@ và click ok rồi restart máy
 ### Set WSL 2 as your default version
 Tải https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi rồi cài đặt
 Cài xong mở PowerShell chạy lệnh:
+
+```bash
 wsl --set-default-version 2
+```
 
 ## Cài Ubuntu
 Vào store cài ubuntu bản 20.4, mở lên rồi nhập user, pass
@@ -67,7 +70,11 @@ sudo dpkg -i --ignore-depends=docker-ce lando-x64-v3.6.4.deb
 
 ## Khởi tạo dự án với lando và docker:
 Mở ubuntu lên rồi chạy lệnh tạo thư mục chứa code. Ví dụ
+
+```bash
 mkdir drupaldemo
+```
+
 vào trong thư mục vừa tạo và tạo file .lando.yml như sau:
 
 ```yml
@@ -116,11 +123,17 @@ services:
 ```
 
 rồi chạy tiếp lệnh sau để khởi tạo môi trường
+
+```bash
 lando start
+```
 
 ## Bây giờ clone code về trong thư mục chứa file .lando.yml vừa tạo và install site thôi.
 
-composer create-project drupal/recommended-project . để tải source về và truy cập link tại DRUSH_OPTIONS_URI cài đặt drupal như bình thường
+```bash
+composer create-project drupal/recommended-project . 
+```
+để tải source về và truy cập link tại DRUSH_OPTIONS_URI cài đặt drupal như bình thường
 
 ```bash
 lando drush si
