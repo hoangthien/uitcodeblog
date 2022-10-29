@@ -1,6 +1,7 @@
 ---
 title: CV Hoang Xuan Thien - Drupal Developer
 icon: config
+date: 2022-01-01
 category:
   - Guide
 tag:
