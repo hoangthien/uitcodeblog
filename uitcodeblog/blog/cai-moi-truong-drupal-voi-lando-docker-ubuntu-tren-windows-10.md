@@ -147,15 +147,18 @@ sudo apt-get remove lando
 ```
 
 Vào Programs and Features của windows và gỡ cài đặt Docker Desktop
+
 Khởi động lại máy
+
 Tải về Docker Desktop và cài lại
+
 Tiếp đến mở cửa sổ dòng lệnh với ubuntu và chạy lệnh cài đặt lando:
 
 ```bash
 sudo dpkg -i --ignore-depends=docker-ce lando-x64-v3.6.4.deb
 ```
 
-File lando-x64-v3.6.4.deb đã được tải từ lúc cài đặt và nằm ở đó nên không cần tải lại, Nếu có phiên bản lando mới hơn thì có thể tải về và cài bản mới nếu muốn với lênh:
+### File lando-x64-v3.6.4.deb đã được tải từ lúc cài đặt và nằm ở đó nên không cần tải lại, Nếu có phiên bản lando mới hơn thì có thể tải về và cài bản mới nếu muốn với lệnh:
 
 ```bash
 wget https://github.com/lando/lando/releases/download/{version}/lando-x64-{version}.deb
@@ -164,7 +167,7 @@ sudo dpkg -i --ignore-depends=docker-ce lando-x64-{version}.deb
 
 Thay {version} bằng version bạn muốn. Ví dụ v3.6.4
 
-Trong quá trình gỡ cài đặt Docker và lando thì source cũ không bị ảnh hưởng, Bạn chỉ cần backup database thường xuyên thì sau khi cài lại Docker với lando chỉ cần import database vào là đã có site như cũ.
+### Trong quá trình gỡ cài đặt Docker và lando thì source cũ không bị ảnh hưởng, Bạn chỉ cần backup database thường xuyên thì sau khi cài lại Docker với lando chỉ cần import database vào là đã có site như cũ.
 Lệnh import database với lando:
 
 ```bash
