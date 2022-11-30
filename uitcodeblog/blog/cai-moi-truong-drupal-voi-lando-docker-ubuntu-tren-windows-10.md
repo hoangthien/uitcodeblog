@@ -139,3 +139,59 @@ composer create-project drupal/recommended-project .
 lando drush si
 ```
 
+## Trong quá trình sử dụng lando và docker xảy ra lỗi ta có thể gỡ cài đặt và cài lại như sau:
+Mở cửa sổ dòng lệnh với ubuntu và chạy lệnh gỡ lando:
+
+```bash
+sudo apt-get remove lando
+```
+
+Vào Programs and Features của windows và gỡ cài đặt Docker Desktop
+Khởi động lại máy
+Tải về Docker Desktop và cài lại
+Tiếp đến mở cửa sổ dòng lệnh với ubuntu và chạy lệnh cài đặt lando:
+
+```bash
+sudo dpkg -i --ignore-depends=docker-ce lando-x64-v3.6.4.deb
+```
+
+File lando-x64-v3.6.4.deb đã được tải từ lúc cài đặt và nằm ở đó nên không cần tải lại, Nếu có phiên bản lando mới hơn thì có thể tải về và cài bản mới nếu muốn với lênh:
+
+```bash
+wget https://github.com/lando/lando/releases/download/{version}/lando-x64-{version}.deb
+sudo dpkg -i --ignore-depends=docker-ce lando-x64-{version}.deb
+```
+
+Thay {version} bằng version bạn muốn. Ví dụ v3.6.4
+
+Trong quá trình gỡ cài đặt Docker và lando thì source cũ không bị ảnh hưởng, Bạn chỉ cần backup database thường xuyên thì sau khi cài lại Docker với lando chỉ cần import database vào là đã có site như cũ.
+Lệnh import database với lando:
+
+```bash
+lando db-import database_file.sql
+```
+
+## Một số lệnh thường dùng với lando:
+
+```bash
+lando composer          Runs composer commands
+lando config            Displays the lando configuration
+lando db-export [file]  Exports database from a database service to a file
+lando db-import <file>  Imports a dump file into a database service
+lando destroy           Destroys your app
+lando drush             Runs drush commands
+lando info              Prints info about your app
+lando init              Initializes code for use with lando
+lando list              Lists all running lando apps and containers
+lando logs              Displays logs for your app
+lando mysql             Drops into a MySQL shell on a database service
+lando php               Runs php commands
+lando poweroff          Spins down all lando related containers
+lando rebuild           Rebuilds your app from scratch, preserving data
+lando restart           Restarts your app
+lando share             Shares your local site publicly
+lando ssh               Drops into a shell on a service, runs commands
+lando start             Starts your app
+lando stop              Stops your app
+lando version           Displays the lando version
+```
