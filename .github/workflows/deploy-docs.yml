@@ -28,15 +28,15 @@ jobs:
         run: |-
           npm run docs:build
 
-      - name: Rename file 
-        run: mv ./docs/assets/_plugin-vue_export-helper.cdc0426e.js ./docs/assets/plugin-vue_export-helper.cdc0426e.js
+      # - name: Rename file 
+      #   run: mv ./docs/assets/_plugin-vue_export-helper.cdc0426e.js ./docs/assets/plugin-vue_export-helper.cdc0426e.js
 
-      - name: Find and Replace
-        uses: jacobtomlinson/gha-find-replace@v2
-        with:
-          find: "_plugin-vue_export-helper.cdc0426e.js"
-          replace: "plugin-vue_export-helper.cdc0426e.js"
-          regex: false
+      # - name: Find and Replace
+      #   uses: jacobtomlinson/gha-find-replace@v2
+      #   with:
+      #     find: "_plugin-vue_export-helper.cdc0426e.js"
+      #     replace: "plugin-vue_export-helper.cdc0426e.js"
+      #     regex: false
 
       - name: Deploy Docs
         uses: JamesIves/github-pages-deploy-action@v4
