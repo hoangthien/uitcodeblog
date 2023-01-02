@@ -1,7 +1,7 @@
 ---
 home: true
 bgImage: /homebg.png
-layout: Blog
+layout: BlogHome
 icon: home
 title: Home
 heroText: UITCODE - Share to be shared
