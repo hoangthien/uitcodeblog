@@ -1,6 +1,6 @@
 import { sidebar } from "vuepress-theme-hope";
 
-export const vi = sidebar({
+export const viSidebar = sidebar({
   "/": [
     "",
     // {
