@@ -1,6 +1,6 @@
 import { hopeTheme } from "vuepress-theme-hope";
-import * as navbar from "./navbar/index.js";
-import * as sidebar from "./sidebar/index.js";
+import { enNavbar, viNavbar } from "./navbar/index.js";
+import { enSidebar, viSidebar } from "./sidebar/index.js";
 
 export default hopeTheme({
   hostname: "https://uitcode.com",
@@ -21,8 +21,8 @@ export default hopeTheme({
   },
   locales: {
     "/": {
-      navbar: navbar.vi,
-      sidebar: sidebar.vi,
+      navbar: viNavbar,
+      sidebar: viSidebar,
       footer: "UITCODE - Share to be shared",
       displayFooter: true,
       blog: {
@@ -31,8 +31,8 @@ export default hopeTheme({
       },
     },
     "/en/": {
-      navbar: navbar.en,
-      sidebar: sidebar.en,
+      navbar: enNavbar,
+      sidebar: enSidebar,
       footer: "UITCODE - Share to be shared",
       displayFooter: true,
       blog: {

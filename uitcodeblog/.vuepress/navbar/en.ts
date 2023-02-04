@@ -1,6 +1,6 @@
 import { navbar } from "vuepress-theme-hope";
 
-export const en = navbar([
+export const enNavbar = navbar([
   "/en/",
   {
     text: "Blog",
