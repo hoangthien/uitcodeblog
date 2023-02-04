@@ -59,11 +59,13 @@ export default hopeTheme({
       container: true,
       demo: true,
       echarts: true,
+      figure: true,
       flowchart: true,
       gfm: true,
-      imageSize: true,
+      imgLazyload: true,
+      imgSize: true,
       include: true,
-      lazyLoad: true,
+      katex: true,
       mark: true,
       mermaid: true,
       playground: {
@@ -74,13 +76,13 @@ export default hopeTheme({
       },
       stylize: [
         {
-          matcher: "Recommanded",
+          matcher: "Recommended",
           replacer: ({ tag }) => {
             if (tag === "em")
               return {
                 tag: "Badge",
                 attrs: { type: "tip" },
-                content: "Recommanded",
+                content: "Recommended",
               };
           },
         },
@@ -88,8 +90,7 @@ export default hopeTheme({
       sub: true,
       sup: true,
       tabs: true,
-      tex: true,
-      vpre: true,
+      vPre: true,
       vuePlayground: true,
     },
   },
