@@ -49,7 +49,7 @@ export default hopeTheme({
 
   plugins: {
     blog: {
-      autoExcerpt: true,
+      excerptLength: 200,
     },
     mdEnhance: {
       align: true,
