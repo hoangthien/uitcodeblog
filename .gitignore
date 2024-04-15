@@ -1,4 +1,5 @@
+
 node_modules/
-.idea/
-uitcodeblog/.vuepress/.cache/
-uitcodeblog/.vuepress/.temp/
+src/.vuepress/.cache/
+src/.vuepress/.temp/
+src/.vuepress/dist/
