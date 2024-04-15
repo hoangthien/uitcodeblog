@@ -16,7 +16,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 20
           cache: npm
 
       - name: Install Deps
@@ -27,16 +27,6 @@ jobs:
           NODE_OPTIONS: --max_old_space_size=8192
         run: |-
           npm run docs:build
-
-      # - name: Rename file 
-      #   run: mv ./docs/assets/_plugin-vue_export-helper.cdc0426e.js ./docs/assets/plugin-vue_export-helper.cdc0426e.js
-
-      # - name: Find and Replace
-      #   uses: jacobtomlinson/gha-find-replace@v2
-      #   with:
-      #     find: "_plugin-vue_export-helper.cdc0426e.js"
-      #     replace: "plugin-vue_export-helper.cdc0426e.js"
-      #     regex: false
 
       - name: Deploy Docs
         uses: JamesIves/github-pages-deploy-action@v4
