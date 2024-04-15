@@ -6,14 +6,14 @@ icon: home
 title: Home
 heroText: UITCODE - Share to be shared
 projects:
-  - icon: article
+  - icon: newspaper
     name: Site Builder
     link: /en/category/site-builder/
 
-  - icon: decorate
+  - icon: palette
     name: Theme Development
     link: /en/category/theme-development/
 
-  - icon: software
+  - icon: cubes
     name: Module Development
     link: /en/category/module-development/

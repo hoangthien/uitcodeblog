@@ -10,9 +10,9 @@ export const viNavbar = navbar([
       {
         text: "Drupal Development",
         children: [
-          { text: "Site Builder", icon: "article", link: "site-builder" },
-          { text: "Theme Development", icon: "decorate", link: "theme-development" },
-          { text: "Module Development", icon: "software", link: "module-development"},
+          { text: "Site Builder", icon: "newspaper", link: "site-builder" },
+          { text: "Theme Development", icon: "palette", link: "theme-development" },
+          { text: "Module Development", icon: "cubes", link: "module-development"},
         ],
       },
       {
@@ -23,6 +23,6 @@ export const viNavbar = navbar([
       },
     ],
   },
-  { text: "Giới thiệu", icon: "creative", link: "/gioi-thieu.html" },
-  { text: "Liên hệ", icon: "creative", link: "/lien-he.html" },
+  { text: "Giới thiệu", icon: "circle-info", link: "/gioi-thieu.html" },
+  { text: "Liên hệ", icon: "address-book", link: "/lien-he.html" },
 ]);

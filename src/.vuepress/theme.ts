@@ -22,7 +22,7 @@ export default hopeTheme({
 
   blog: {
     medias: {
-      Email: "hoangthien.uit@gmail.com",
+      Email: "mailto:hoangthien.uit@gmail.com",
       Youtube: "https://www.youtube.com/c/HoangThienUITCODE",
     },
   },
