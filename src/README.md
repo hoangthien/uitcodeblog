@@ -6,14 +6,14 @@ icon: home
 title: Home
 heroText: UITCODE - Share to be shared
 projects:
-  - icon: newspaper
-    name: Site Builder
-    link: /category/site-builder/
+  - icon: gear
+    name: Drupal Site Builder
+    link: /drupal/site-builder/
 
-  - icon: palette
-    name: Theme Development
-    link: /category/theme-development/
+  - icon: wand-magic-sparkles
+    name: Drupal Theming
+    link: /drupal/theming/
 
   - icon: cubes
-    name: Module Development
-    link: /category/module-development/
+    name: Drupal Module Development
+    link: /drupal/module-development/

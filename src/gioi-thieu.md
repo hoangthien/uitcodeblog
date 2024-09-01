@@ -18,5 +18,4 @@ actions:
 
 ---
 
-## 🛠 Vài lời... từ từ viết sau nhé...
-
+## 🛠 Vài lời... từ từ viết sau nhé

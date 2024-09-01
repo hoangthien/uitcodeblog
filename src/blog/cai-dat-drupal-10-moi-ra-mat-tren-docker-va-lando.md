@@ -14,6 +14,8 @@ tag:
 
 # Cài đặt Drupal 10 mới ra mắt trên Docker với Lando
 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac posuere dui, nec mattis justo. Mauris bibendum erat massa, at dignissim dolor dignissim eu. Donec eu sem eu nibh feugiat porttitor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus eget nisl ac nisi viverra pretium. Duis sit amet eros ultrices, rutrum justo vitae, egestas metus.
+
 ## Tạo dự án Drupal 10 với composer
 
 ```bash
@@ -117,13 +119,15 @@ lando drush si
  [success] Installation complete.  User name: admin  User password: dfEJdY86QC
 ```
 
-Site https://drupaldev.lndo.site được cài đặt thành công. Theme mặc định sẽ là Olivero và theme admin sẽ là Claro.
+Site <https://drupaldev.lndo.site> được cài đặt thành công. Theme mặc định sẽ là Olivero và theme admin sẽ là Claro.
 
 ## Đặt lại mật khẩu với drush upwd
-```drush
+
+```bash
 lando drush upwd admin admin
 ```
-Truy cập https://drupaldev.lndo.site với user name và password lần lượt là admin admin.
+
+Truy cập <https://drupaldev.lndo.site> với user name và password lần lượt là admin admin.
 
 ## Giải pháp cài module contrib chưa có phiên bản tương thích Drupal 10
 
@@ -152,7 +156,7 @@ Phiên bản mới nhất của module_filter v3.2.0 sẽ được cài đặt, 
 
 Vì Drupal 10 mới ra mắt nên các module contrib sẽ chưa tương thích đầy đủ, vì vậy chúng ta có thể dùng patch để sửa tạm thời chờ các bản cập nhật tương thích drupal 10 của cộng đồng drupal dev.
 
-Để áp dụng các bản vá chúng ta cần tìm bản vá phù hợp trên drupa.org và thêm vào file composer.json như sau (ví dụ sau là trường hợp sửa cho module module_filter):
+Để áp dụng các bản vá chúng ta cần tìm bản vá phù hợp trên drupal.org và thêm vào file composer.json như sau (ví dụ sau là trường hợp sửa cho module module_filter):
 
 ```json
 {
@@ -175,6 +179,6 @@ lando composer require cweagans/composer-patches
 lando composer update drupal/module_filter
 ```
 
-Lúc này bản vá https://www.drupal.org/files/issues/2022-11-03/3297692-8.patch sẽ được áp dụng cho module module_filter version 3.2.0, và lúc này module đã tương thích với Drupal 10, chúng ta có thể bật module này trong admin hoặc dùng drush en để bật nó.
+Lúc này bản vá <https://www.drupal.org/files/issues/2022-11-03/3297692-8.patch> sẽ được áp dụng cho module module_filter version 3.2.0, lúc này module đã tương thích với Drupal 10, chúng ta có thể bật module này trong admin hoặc dùng drush en để bật nó.
 
 Sau này khi module module_filter đã có phiên bản mới tương thích Drupal 10 thì ta chỉ việc gỡ patch trong file composer.json và chạy lại composer update để lấy phiên bản module mới là được.

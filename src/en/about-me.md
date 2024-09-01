@@ -18,5 +18,4 @@ actions:
 
 ---
 
-## 🛠 A few words... slowly write later...
-
+## 🛠 A few words... slowly write later

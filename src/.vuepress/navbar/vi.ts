@@ -3,26 +3,16 @@ import { navbar } from "vuepress-theme-hope";
 export const viNavbar = navbar([
   "/",
   {
-    text: "Blog",
-    icon: "edit",
-    prefix: "/category/",
+    text: "Drupal",
+    icon: "drupal",
+    prefix: "/drupal/",
     children: [
-      {
-        text: "Drupal Development",
-        children: [
-          { text: "Site Builder", icon: "newspaper", link: "site-builder" },
-          { text: "Theme Development", icon: "palette", link: "theme-development" },
-          { text: "Module Development", icon: "cubes", link: "module-development"},
-        ],
-      },
-      {
-        text: "Twig",
-        children: [
-          { text: "Twig", icon: "edit", link: "twig" },
-        ],
-      },
+      { text: "Site Builder", icon: "gear", link: "site-builder/" },
+      { text: "Theming", icon: "wand-magic-sparkles", link: "theming/" },
+      { text: "Module Development", icon: "cubes", link: "module-development/"},
     ],
   },
+  { text: "Blog", icon: "edit", link: "/blog/" },
   { text: "Giới thiệu", icon: "circle-info", link: "/gioi-thieu.html" },
   { text: "Liên hệ", icon: "address-book", link: "/lien-he.html" },
 ]);
