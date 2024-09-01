@@ -16,13 +16,16 @@ tag:
 ## Install Ubuntu on WSL2 on Windows 10
 
 ### Mở Turn Windows features on or off
+
 Check vào:
+
 - Windows Subsystem for Linux
 - Virtual Machine Platform
 và click ok rồi restart máy
 
 ### Set WSL 2 as your default version
-Tải https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi rồi cài đặt
+
+Tải <https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi> rồi cài đặt
 Cài xong mở PowerShell chạy lệnh:
 
 ```bash
@@ -30,12 +33,14 @@ wsl --set-default-version 2
 ```
 
 ## Cài Ubuntu
+
 Vào store cài ubuntu bản 20.4, mở lên rồi nhập user, pass
 
 
-## Tải docker về và cài https://www.docker.com/
+## Tải docker về và cài <https://www.docker.com/>
 
-## Cài php 7.4 để dùng cho composer trong ubuntu:
+## Cài php 7.4 để dùng cho composer trong ubuntu
+
 Mở cửa sổ dòng lệnh với ubuntu vừa cài lên và chạy các lệnh sau:
 
 ```bash
@@ -61,14 +66,15 @@ sudo php /tmp/composer-setup.php --install-dir=/usr/local/bin --filename=compose
 
 Gõ lệnh composer -V nếu có xuất hiện phiên bản là cài thành công
 
-## Cài lando https://github.com/lando/lando/releases bằng 2 lệnh sau:
+## Cài lando <https://github.com/lando/lando/releases> bằng 2 lệnh sau
 
 ```bash
 wget https://github.com/lando/lando/releases/download/v3.6.4/lando-x64-v3.6.4.deb
 sudo dpkg -i --ignore-depends=docker-ce lando-x64-v3.6.4.deb
 ```
 
-## Khởi tạo dự án với lando và docker:
+## Khởi tạo dự án với lando và docker
+
 Mở ubuntu lên rồi chạy lệnh tạo thư mục chứa code. Ví dụ
 
 ```bash
@@ -116,10 +122,6 @@ services:
 #   blt:
 #     service: appserver
 #     cmd: /app/vendor/acquia/blt/bin/blt
-#   drupal:
-#     service: appserver
-#     cmd: /app/vendor/bin/drupal
-
 ```
 
 rồi chạy tiếp lệnh sau để khởi tạo môi trường
@@ -131,15 +133,17 @@ lando start
 ## Bây giờ clone code về trong thư mục chứa file .lando.yml vừa tạo và install site thôi.
 
 ```bash
-composer create-project drupal/recommended-project . 
+composer create-project drupal/recommended-project .
 ```
+
 để tải source về và truy cập link tại DRUSH_OPTIONS_URI cài đặt drupal như bình thường
 
 ```bash
 lando drush si
 ```
 
-## Trong quá trình sử dụng lando và docker xảy ra lỗi ta có thể gỡ cài đặt và cài lại như sau:
+## Trong quá trình sử dụng lando và docker xảy ra lỗi ta có thể gỡ cài đặt và cài lại như sau
+
 Mở cửa sổ dòng lệnh với ubuntu và chạy lệnh gỡ lando:
 
 ```bash
@@ -158,7 +162,7 @@ Tiếp đến mở cửa sổ dòng lệnh với ubuntu và chạy lệnh cài �
 sudo dpkg -i --ignore-depends=docker-ce lando-x64-v3.6.4.deb
 ```
 
-### File lando-x64-v3.6.4.deb đã được tải từ lúc cài đặt và nằm ở đó nên không cần tải lại, Nếu có phiên bản lando mới hơn thì có thể tải về và cài bản mới nếu muốn với lệnh:
+### File lando-x64-v3.6.4.deb đã được tải từ lúc cài đặt và nằm ở đó nên không cần tải lại, Nếu có phiên bản lando mới hơn thì có thể tải về và cài bản mới nếu muốn với lệnh
 
 ```bash
 wget https://github.com/lando/lando/releases/download/{version}/lando-x64-{version}.deb
@@ -168,13 +172,14 @@ sudo dpkg -i --ignore-depends=docker-ce lando-x64-{version}.deb
 Thay {version} bằng version bạn muốn. Ví dụ v3.6.4
 
 ### Trong quá trình gỡ cài đặt Docker và lando thì source cũ không bị ảnh hưởng, Bạn chỉ cần backup database thường xuyên thì sau khi cài lại Docker với lando chỉ cần import database vào là đã có site như cũ.
+
 Lệnh import database với lando:
 
 ```bash
 lando db-import database_file.sql
 ```
 
-## Một số lệnh thường dùng với lando:
+## Một số lệnh thường dùng với lando
 
 ```bash
 lando composer          Runs composer commands
