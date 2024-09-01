@@ -4,7 +4,7 @@ export const viNavbar = navbar([
   "/",
   {
     text: "Drupal",
-    icon: "drupal",
+    icon: "fa-brands fa-drupal",
     prefix: "/drupal/",
     children: [
       { text: "Site Builder", icon: "gear", link: "site-builder/" },
