@@ -10,11 +10,11 @@ export default defineUserConfig({
       title: "UITCODE",
       description: "Share to be shared",
     },
-    "/en/": {
-      lang: "en-US",
-      title: "UITCODE",
-      description: "Share to be shared",
-    },
+    // "/en/": {
+    //   lang: "en-US",
+    //   title: "UITCODE",
+    //   description: "Share to be shared",
+    // },
   },
 
   theme,
