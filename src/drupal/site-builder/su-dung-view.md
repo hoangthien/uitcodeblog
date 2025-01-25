@@ -6,7 +6,7 @@ tag:
   - views
 ---
 
-# Hướng Dẫn Sử Dụng Views trong Drupal: Tối Ưu Hiển Thị Dữ Liệu**
+# Hướng Dẫn Sử Dụng Views trong Drupal: Tối Ưu Hiển Thị Dữ Liệu
 
 Trong Drupal, Views là một trong những công cụ mạnh mẽ và linh hoạt nhất giúp người dùng tạo ra các danh sách dữ liệu động mà không cần phải viết mã thủ công. Với Views, bạn có thể dễ dàng hiển thị nội dung từ cơ sở dữ liệu của Drupal, thực hiện các thao tác lọc, sắp xếp, và phân nhóm dữ liệu một cách linh hoạt. Trong bài viết này, chúng ta sẽ cùng khám phá chi tiết các tính năng mạnh mẽ mà Views trong Drupal 10 hỗ trợ và cách sử dụng chúng để tối ưu hóa hiển thị dữ liệu trên website của bạn.
 
