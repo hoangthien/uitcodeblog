@@ -10,7 +10,7 @@ tag:
 file_folder: 20220928
 ---
 
-Dưới đây là hướng dẫn từng bước để tạo một **custom module** trong Drupal 10:
+# Tạo một **custom module** trong Drupal 10:
 
 ---
 
