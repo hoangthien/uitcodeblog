@@ -14,8 +14,6 @@ tag:
 
 # Cài đặt Drupal 10 mới ra mắt trên Docker với Lando
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac posuere dui, nec mattis justo. Mauris bibendum erat massa, at dignissim dolor dignissim eu. Donec eu sem eu nibh feugiat porttitor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus eget nisl ac nisi viverra pretium. Duis sit amet eros ultrices, rutrum justo vitae, egestas metus.
-
 ## Tạo dự án Drupal 10 với composer
 
 ```bash
